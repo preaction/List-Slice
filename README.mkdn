@@ -50,7 +50,7 @@ all but the first `$size` elements from `@list`.
 
 # SEE ALSO
 
-[List::Util](http://search.cpan.org/perldoc?List::Util), [List::MoreUtils](http://search.cpan.org/perldoc?List::MoreUtils), [List::UtilsBy](http://search.cpan.org/perldoc?List::UtilsBy)
+[List::Util](https://metacpan.org/pod/List::Util), [List::MoreUtils](https://metacpan.org/pod/List::MoreUtils), [List::UtilsBy](https://metacpan.org/pod/List::UtilsBy)
 
 # AUTHOR
 

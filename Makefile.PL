@@ -27,9 +27,7 @@ my %WriteMakefileArgs = (
     "File::Spec" => 0,
     "IO::Handle" => 0,
     "IPC::Open3" => 0,
-    "Test::Differences" => 0,
-    "Test::Exception" => 0,
-    "Test::More" => "1.001005"
+    "Test::More" => 0
   },
   "VERSION" => "0.001",
   "test" => {
@@ -44,9 +42,7 @@ my %FallbackPrereqs = (
   "IO::Handle" => 0,
   "IPC::Open3" => 0,
   "Module::Build" => "0.28",
-  "Test::Differences" => 0,
-  "Test::Exception" => 0,
-  "Test::More" => "1.001005"
+  "Test::More" => 0
 );
 
 
