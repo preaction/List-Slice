@@ -1,9 +1,5 @@
 requires "perl" => "5.006";
 
-on 'build' => sub {
-  requires "Module::Build" => "0.28";
-};
-
 on 'test' => sub {
   requires "ExtUtils::MakeMaker" => "0";
   requires "File::Spec" => "0";
@@ -18,7 +14,6 @@ on 'test' => sub {
 
 on 'configure' => sub {
   requires "ExtUtils::MakeMaker" => "0";
-  requires "Module::Build" => "0.28";
 };
 
 on 'develop' => sub {

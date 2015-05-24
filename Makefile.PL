@@ -9,12 +9,8 @@ use ExtUtils::MakeMaker;
 my %WriteMakefileArgs = (
   "ABSTRACT" => "Slice-like operations on lists",
   "AUTHOR" => "Doug Bell <preaction\@cpan.org>",
-  "BUILD_REQUIRES" => {
-    "Module::Build" => "0.28"
-  },
   "CONFIGURE_REQUIRES" => {
-    "ExtUtils::MakeMaker" => 0,
-    "Module::Build" => "0.28"
+    "ExtUtils::MakeMaker" => 0
   },
   "DISTNAME" => "List-Slice",
   "EXE_FILES" => [],
@@ -29,7 +25,7 @@ my %WriteMakefileArgs = (
     "IPC::Open3" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "0.001",
+  "VERSION" => "0.002",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -41,7 +37,6 @@ my %FallbackPrereqs = (
   "File::Spec" => 0,
   "IO::Handle" => 0,
   "IPC::Open3" => 0,
-  "Module::Build" => "0.28",
   "Test::More" => 0
 );
 
