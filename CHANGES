@@ -1,6 +1,11 @@
 Changelog for List-Slice
 
-0.002 2015-05-24T04:35:40
+0.003 2015-05-31T22:28:48
+ - add ppport.h to the root so non-dzil build works
+ - fix segfault when negative tail is past the start of the list
+ - ignore *.o files in the root dir
+
+0.002 2015-05-24T04:35:40Z
  - add XS build artifacts to gitignore
  - remove Module::Build from the dist
 
