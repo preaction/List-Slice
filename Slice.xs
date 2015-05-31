@@ -16,10 +16,10 @@ ALIAS:
     tail = 1
 PPCODE:
 {
-    int size;
-    int start;
-    int end;
-    int i;
+    int size = 0;
+    int start = 0;
+    int end = 0;
+    int i = 0;
 
     size = SvIV( ST(0) );
 
@@ -46,9 +46,14 @@ PPCODE:
         }
     }
 
-    EXTEND( SP, end - start );
-    for ( i = start; i <= end; i++ ) {
-        PUSHs( sv_2mortal( newSVsv( ST(i) ) ) );
+    if ( end < start ) {
+        XSRETURN(0);
     }
-    XSRETURN( end - start );
+    else {
+        EXTEND( SP, end - start );
+        for ( i = start; i <= end; i++ ) {
+            PUSHs( sv_2mortal( newSVsv( ST(i) ) ) );
+        }
+        XSRETURN( end - start );
+    }
 }
