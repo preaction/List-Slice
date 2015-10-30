@@ -1,7 +1,7 @@
 package List::Slice;
 # ABSTRACT: Slice-like operations on lists
 
-use strict;
+use strict; use warnings;
 require Exporter;
 
 our @ISA        = qw(Exporter);
